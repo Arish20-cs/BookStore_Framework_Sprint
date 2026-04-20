@@ -4,12 +4,7 @@
   <artifactId>bookstore-cucumber-framework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
     <dependencies>
-  <dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-core</artifactId>
-    <version>7.33.0</version>
-    
-</dependency>
+  
 <dependency>
     <groupId>com.google.code.gson</groupId>
     <artifactId>gson</artifactId>
