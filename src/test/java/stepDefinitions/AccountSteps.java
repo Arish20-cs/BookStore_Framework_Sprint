@@ -46,7 +46,20 @@ public class AccountSteps {
     public void extraFieldPayload() {
         requestBody = "{ \"userName\": \"user1\", \"password\": \"Test@123\", \"extra\": \"field\" }";
     }
+    @Given("empty user payload is prepared")
+    public void emptyPayload() {
+        requestBody = "{ \"userName\": \"\", \"password\": \"\" }";
+    }
 
+    @Given("invalid JSON payload is prepared")
+    public void invalidJsonPayload() {
+        requestBody = "{ userName: tester, password: }";
+    }
+
+    @Given("user payload with extra invalid field is prepared")
+    public void extraInvalidFieldPayload() {
+        requestBody = "{ \"userName\": \"tester_extra\", \"password\": \"Test@123\", \"unexpectedField\": \"invalid\" }";
+    }
 
 
     @When("I send a POST request to create a user")
@@ -76,7 +89,10 @@ public class AccountSteps {
     public void invalidUsername() {
         requestBody = "{ \"userName\": \"wrongUser\", \"password\": \"Test@123\" }";
     }
-
+    @Given("invalid password is prepared")
+    public void invalidPassword() {
+        requestBody = "{ \"userName\": \"tester\", \"password\": \"wrongPass\" }";
+    }
 
     @When("I send a POST request to generate token")
     public void generateToken() {
@@ -104,6 +120,10 @@ public class AccountSteps {
     public void invalidToken() {
         token = "invalid_token";
     }
+    @Given("no token is provided")
+    public void noToken() {
+        token = "";
+    }
 
 
     @When("I send a POST request to authorize user")
@@ -120,6 +140,11 @@ public class AccountSteps {
     public void validUserId() {
         validToken();
     }
+    @Given("invalid user ID is prepared")
+    public void invalidUserId() {
+        userId = "invalid-id";
+    }
+
 
 
 
