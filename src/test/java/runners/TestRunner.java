@@ -4,15 +4,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/features",
-        glue = {"stepdefinitions", "hooks"},
-        tags = "@account or @book",
-        plugin = {
-                "pretty",
-                "html:reports/cucumber.html",
-                "json:reports/cucumber.json"
-        },
-        monochrome = true
-)
+	    features = "src/test/resources/features-package",
+	    glue = "stepDefinitions",
+	    tags = "@BookStoreWebAPI01TC_01 or @BookStoreWebAPI01TC_02 or @BookStoreWebAPI01TC_03 or @BookStoreWebAPI01TC_06 or @BookStoreWebAPI01TC_07 or @BookStoreWebAPI01TC_10 or @BookStoreWebAPI01TC_11 or @BookStoreWebAPI01TC_13 or @BookStoreWebAPI01TC_15 or @BookStoreWebAPI01TC_17"
+	)
 public class TestRunner extends AbstractTestNGCucumberTests {
 }
