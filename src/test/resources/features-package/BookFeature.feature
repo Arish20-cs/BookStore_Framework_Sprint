@@ -56,7 +56,7 @@ Then the response status should be 200
 Scenario: Validate replacement of same book using an existing ISBN
 Given valid token userId and same ISBN are available
 When I send a PUT request to replace book
-Then the response status should be 400
+Then the response status should be 409
 
 
 @BookStoreWebAPI01TC_26
@@ -80,10 +80,11 @@ Then the response status should be 204
 
 @BookStoreWebAPI21TC_29
 Scenario: Verify deletion of book with valid isbn and token
-Given valid token userId and valid ISBN are available
-When I send a GET request to retrieve the user book collection
-Then the response status should be 200
-And the response body should not contain the deleted book ISBN
+  Given valid token userId and valid ISBN are available
+  When I send a DELETE request to delete the book
+  And I send a GET request to retrieve the user book collection
+  Then the response status should be 200
+  And the response body should not contain the deleted book ISBN
 
 @BookStoreWebAPI01TC_30
 Scenario: Validate deleting books with invalid ISBN
@@ -96,7 +97,7 @@ Scenario: Validate delete request when done multiple times
 Given valid token userId and ISBN are available
 When I send a DELETE request to remove book
 And I send a DELETE request to remove book again
-Then the response status should be 400
+Then the response status should be 404
 
 @BookStoreWebAPI01TC_32
 Scenario: Validate deleting all books without authentication token
