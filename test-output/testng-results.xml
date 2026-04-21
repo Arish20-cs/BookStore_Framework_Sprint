@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="14" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-21T08:06:12 IST" name="Default suite" finished-at="2026-04-21T08:06:30 IST" duration-ms="18364">
+  <suite started-at="2026-04-21T09:01:52 IST" name="Default suite" finished-at="2026-04-21T09:02:51 IST" duration-ms="58815">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@198b6731]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-21T08:06:12 IST" name="Default test" finished-at="2026-04-21T08:06:30 IST" duration-ms="18364">
+    <test started-at="2026-04-21T09:01:52 IST" name="Default test" finished-at="2026-04-21T09:02:51 IST" duration-ms="58815">
       <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@198b6731]" started-at="2026-04-21T08:06:12 IST" name="setUpClass" finished-at="2026-04-21T08:06:12 IST" duration-ms="736" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:01:52 IST" name="setUpClass" finished-at="2026-04-21T09:01:53 IST" duration-ms="962" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6029f2a4]]>
+                <![CDATA[org.testng.TestRunner@5f65e0c0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@198b6731]" started-at="2026-04-21T08:06:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:06:16 IST" duration-ms="3290" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:01:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:01:56 IST" duration-ms="3122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@198b6731]" started-at="2026-04-21T08:06:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:06:18 IST" duration-ms="2285" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:01:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:01:58 IST" duration-ms="2009" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@198b6731]" started-at="2026-04-21T08:06:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:06:20 IST" duration-ms="1572" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:01:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:01:59 IST" duration-ms="615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response for invalid ISBN"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:01:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:00 IST" duration-ms="1355" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +85,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@198b6731]" started-at="2026-04-21T08:06:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:06:23 IST" duration-ms="3787" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:02 IST" duration-ms="1297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate adding multiple books"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:02 IST" duration-ms="724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify adding book with invalid ISBN"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:06 IST" duration-ms="4015" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +133,73 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@198b6731]" started-at="2026-04-21T08:06:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:06:26 IST" duration-ms="3044" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:10 IST" duration-ms="3822" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate replacement of same book using an existing ISBN"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [409] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [409] but found [400]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at stepDefinitions.BookSteps.validateStatusCode(BookSteps.java:317)
+at ✽.the response status should be 409(file:///C:/Users/moort/git/BookStore_Framework_Sprint/src/test/resources/features-package/BookFeature.feature:59)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:14 IST" duration-ms="3429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify updating book with invalid ISBN"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:21 IST" duration-ms="7329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify updating book with invalid token"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:27 IST" duration-ms="5669" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +215,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@198b6731]" started-at="2026-04-21T08:06:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:06:30 IST" duration-ms="3465" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:33 IST" duration-ms="6170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +231,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@198b6731]" started-at="2026-04-21T08:06:30 IST" name="tearDownClass" finished-at="2026-04-21T08:06:30 IST" duration-ms="87" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:35 IST" duration-ms="2341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate deleting books with invalid ISBN"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:47 IST" duration-ms="11784" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate delete request when done multiple times"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [404] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [404] but found [400]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at stepDefinitions.BookSteps.validateStatusCode(BookSteps.java:317)
+at ✽.the response status should be 404(file:///C:/Users/moort/git/BookStore_Framework_Sprint/src/test/resources/features-package/BookFeature.feature:100)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:49 IST" duration-ms="1939" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate deleting all books without authentication token"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T09:02:51 IST" duration-ms="2052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate deleting all books with authentication token"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Store API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T09:02:51 IST" name="tearDownClass" finished-at="2026-04-21T09:02:51 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
