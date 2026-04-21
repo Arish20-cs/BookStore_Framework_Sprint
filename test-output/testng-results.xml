@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="17" passed="9" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-21T08:26:45 IST" name="Default suite" finished-at="2026-04-21T08:27:15 IST" duration-ms="29986">
+  <suite started-at="2026-04-21T11:12:54 IST" name="Default suite" finished-at="2026-04-21T11:13:42 IST" duration-ms="48164">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-21T08:26:45 IST" name="Default test" finished-at="2026-04-21T08:27:15 IST" duration-ms="29986">
+    <test started-at="2026-04-21T11:12:54 IST" name="Default test" finished-at="2026-04-21T11:13:42 IST" duration-ms="48164">
       <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:45 IST" name="setUpClass" finished-at="2026-04-21T08:26:45 IST" duration-ms="595" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:12:54 IST" name="setUpClass" finished-at="2026-04-21T11:12:54 IST" duration-ms="544" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@65b73689]]>
+                <![CDATA[org.testng.TestRunner@3dad535f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:26:49 IST" duration-ms="3525" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:12:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:12:58 IST" duration-ms="3595" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,14 +30,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:26:49 IST" duration-ms="641" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:12:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:01 IST" duration-ms="2638" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,14 +46,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:26:50 IST" duration-ms="1011" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:02 IST" duration-ms="1171" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
@@ -106,47 +106,47 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:182)
-at ✽.the response status should be 400(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:28)
+at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:193)
+at ✽.the response status should be 400(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:26)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:26:51 IST" duration-ms="620" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:02 IST" duration-ms="601" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Create user with empty fields"]]>
+                <![CDATA["Create user with space username"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:26:52 IST" duration-ms="595" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:03 IST" duration-ms="968" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Create user with invalid JSON body"]]>
+                <![CDATA["Generate token with invalid JSON body"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:26:53 IST" duration-ms="1478" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:07 IST" duration-ms="3844" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,14 +155,14 @@ at ✽.the response status should be 400(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:26:55 IST" duration-ms="1459" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:13 IST" duration-ms="5343" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -171,7 +171,7 @@ at ✽.the response status should be 400(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
@@ -213,24 +213,24 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:182)
-at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:54)
+at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:193)
+at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:50)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:26:56 IST" duration-ms="1607" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:17 IST" duration-ms="4697" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Generate token with invalid password"]]>
+                <![CDATA["Generate token with wrong password"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
@@ -272,15 +272,15 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:182)
-at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:60)
+at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:193)
+at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:56)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:26:58 IST" duration-ms="1627" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:22 IST" duration-ms="4400" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -289,7 +289,7 @@ at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
@@ -331,15 +331,15 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:182)
-at ✽.the response status should be 400(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:66)
+at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:193)
+at ✽.the response status should be 400(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:62)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:26:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:27:01 IST" duration-ms="3506" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:28 IST" duration-ms="6197" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -348,14 +348,14 @@ at ✽.the response status should be 400(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:27:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:27:02 IST" duration-ms="700" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:28 IST" duration-ms="569" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -364,7 +364,7 @@ at ✽.the response status should be 400(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
@@ -406,15 +406,15 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:182)
-at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:80)
+at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:193)
+at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:74)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:27:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:27:03 IST" duration-ms="753" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:29 IST" duration-ms="576" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -423,7 +423,7 @@ at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
@@ -465,15 +465,15 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:182)
-at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:86)
+at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:193)
+at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:80)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:27:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:27:07 IST" duration-ms="3931" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:33 IST" duration-ms="4241" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -482,14 +482,14 @@ at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:27:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:27:07 IST" duration-ms="555" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:34 IST" duration-ms="611" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -498,7 +498,7 @@ at ✽.the response status should be 401(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
@@ -540,15 +540,15 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:182)
-at ✽.the response status should be 404(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:100)
+at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:193)
+at ✽.the response status should be 404(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:92)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:27:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:27:11 IST" duration-ms="4263" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:38 IST" duration-ms="4607" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -557,14 +557,14 @@ at ✽.the response status should be 404(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:27:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:27:12 IST" duration-ms="566" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:39 IST" duration-ms="619" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -573,7 +573,7 @@ at ✽.the response status should be 404(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
@@ -615,15 +615,15 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:182)
-at ✽.the response status should be 404(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:114)
+at stepDefinitions.AccountSteps.validateStatus(AccountSteps.java:193)
+at ✽.the response status should be 404(file:///C:/Users/Raman/git/BookStore_Framework_Sprint/src/test/resources/features-package/AccountFeature.feature:104)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:27:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T08:27:13 IST" duration-ms="544" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T11:13:40 IST" duration-ms="604" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -632,14 +632,14 @@ at ✽.the response status should be 404(file:///C:/Users/Raman/git/BookStore_Fr
             </param>
             <param index="1">
               <value>
-                <![CDATA["Account"]]>
+                <![CDATA["BookStore Account API Tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T08:27:13 IST" name="tearDownClass" finished-at="2026-04-21T08:27:15 IST" duration-ms="1928" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@1c1bbc4e]" started-at="2026-04-21T11:13:40 IST" name="tearDownClass" finished-at="2026-04-21T11:13:42 IST" duration-ms="2268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
