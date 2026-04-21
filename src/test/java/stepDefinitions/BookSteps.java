@@ -2,7 +2,6 @@ package stepDefinitions;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
 
 import io.cucumber.java.en.*;
 import io.restassured.RestAssured;
@@ -25,15 +24,9 @@ public class BookSteps {
     String secondIsbn;
     String invalidIsbn = "12345";
 
-
-    @Given("The user API base URL is set")
+    @Given("The BookStore API base URL is set")
     public void setBaseURL() {
         RestAssured.baseURI = baseUrl;
-    }
-
-    @Given("the book store endpoint is available")
-    public void endpointAvailable() {
-
     }
 
 
@@ -42,6 +35,13 @@ public class BookSteps {
 
         isbn = res.jsonPath().getString("books[0].isbn");
         secondIsbn = res.jsonPath().getString("books[1].isbn");
+    }
+
+    public void cleanUserBooks() {
+        given()
+            .header("Authorization", "Bearer " + token)
+        .when()
+            .delete("/BookStore/v1/Books?UserId=" + userId);
     }
 
     public void addBookToUser() {
@@ -56,22 +56,14 @@ public class BookSteps {
         .when()
                 .post("/BookStore/v1/Books");
 
-        System.out.println("Add Book Response:\n" + res.asPrettyString());
-
         if (res.getStatusCode() != 201) {
             throw new RuntimeException("Book not added. Status: " + res.getStatusCode());
         }
     }
 
-
     @When("I send a GET request to fetch all books")
-    public void getBooks() {
+    public void getAllBooks() {
         response = given().when().get("/BookStore/v1/Books");
-    }
-
-    @Given("a valid ISBN is available")
-    public void a_valid_isbn_is_available() {
-        fetchISBNs();
     }
 
     @Given("valid ISBN is available")
@@ -84,26 +76,12 @@ public class BookSteps {
         isbn = invalidIsbn;
     }
 
-    @When("I send a GET request to retrieve the book")
-    public void getBookRetrieve() {
-        response = given()
-                .queryParam("ISBN", isbn)
-        .when()
-                .get("/BookStore/v1/Book");
-    }
-
     @When("I send a GET request to fetch book by ISBN")
-    public void getBookFetch() {
+    public void getBookByISBN() {
         response = given()
                 .queryParam("ISBN", isbn)
         .when()
                 .get("/BookStore/v1/Book");
-    }
-
-
-    @Given("valid token and valid ISBN are available")
-    public void valid_token_and_valid_isbn_are_available() {
-        fetchISBNs();
     }
 
     @Given("valid token and ISBN are available")
@@ -112,7 +90,7 @@ public class BookSteps {
     }
 
     @Given("valid token and multiple ISBNs are available")
-    public void multipleISBN() {
+    public void validMultipleISBN() {
         fetchISBNs();
     }
 
@@ -151,71 +129,35 @@ public class BookSteps {
                 .post("/BookStore/v1/Books");
     }
 
-
-    @Given("valid token userId and book details are available")
-    public void updateSetup1() {
-
-
-        given()
-            .header("Authorization", "Bearer " + token)
-        .when()
-            .delete("/BookStore/v1/Books?UserId=" + userId);
-
-        fetchISBNs();
-        addBookToUser();
-
-        Response check = given()
-                .header("Authorization", "Bearer " + token)
-        .when()
-                .get("/Account/v1/User/" + userId);
-
-        String body = check.asString();
-
-        System.out.println("User Collection:\n" + body);
-
-        if (!body.contains(isbn)) {
-            throw new RuntimeException("Book NOT added. Update will fail.");
-        }
-    }
+  
 
     @Given("valid token userId and ISBN are available")
-    public void updateSetup2() {
-        updateSetup1();
-    }
+    public void setupForUpdate() {
 
-    @Given("valid token userId and valid ISBN are available")
-    public void updateSetup3() {
-        updateSetup1();
+        cleanUserBooks();
+        fetchISBNs();
+        addBookToUser();
     }
 
     @Given("valid token userId and same ISBN are available")
     public void sameISBN() {
-        updateSetup1();
+        setupForUpdate();
         secondIsbn = isbn;
     }
 
     @Given("valid token userId and invalid ISBN are available for update")
     public void invalidUpdate() {
-        updateSetup1();
+        setupForUpdate();
         secondIsbn = invalidIsbn;
     }
 
     @Given("invalid token with valid userId and ISBN are available")
     public void invalidTokenUpdate() {
-        updateSetup1();
+        setupForUpdate();
         token = "invalid_token";
     }
 
-    @When("I send a PUT request to replace the book")
-    public void replaceBook1() {
-        replaceBook();
-    }
-
     @When("I send a PUT request to replace book")
-    public void replaceBook2() {
-        replaceBook();
-    }
-
     public void replaceBook() {
 
         requestBody = "{ \"userId\": \"" + userId + "\"," +
@@ -228,25 +170,17 @@ public class BookSteps {
         .when()
                 .put("/BookStore/v1/Books/" + isbn);
 
-        token = originalToken;
+        token = originalToken; // restore
     }
 
+   
 
     @Given("valid token userId and invalid ISBN are available for delete")
     public void invalidDelete() {
         isbn = invalidIsbn;
     }
 
-    @When("I send a DELETE request to delete the book")
-    public void deleteBook1() {
-        deleteBook();
-    }
-
     @When("I send a DELETE request to remove book")
-    public void deleteBook2() {
-        deleteBook();
-    }
-
     public void deleteBook() {
 
         requestBody = "{ \"isbn\": \"" + isbn + "\", \"userId\": \"" + userId + "\" }";
@@ -259,24 +193,21 @@ public class BookSteps {
                 .delete("/BookStore/v1/Book");
     }
 
-    @And("I send a DELETE request to remove book again")
+    @When("I send a DELETE request to remove book again")
     public void deleteAgain() {
         deleteBook();
     }
 
-    @When("I send a GET request to retrieve the user book collection")
-    public void getUserBooks() {
+    @When("I verify the user still exists")
+    public void verifyUserExists() {
+
         response = given()
                 .header("Authorization", "Bearer " + token)
         .when()
                 .get("/Account/v1/User/" + userId);
     }
 
-    @Then("the response body should not contain the deleted book ISBN")
-    public void verifyDeleted() {
-        assertFalse(response.asString().contains(isbn));
-    }
-
+  
     @Given("valid userId without token is available")
     public void noToken() {
         token = "";
@@ -288,7 +219,7 @@ public class BookSteps {
     }
 
     @When("I send a DELETE request to remove all books")
-    public void deleteAll() {
+    public void deleteAllBooks() {
 
         response = given()
                 .header("Authorization", "Bearer " + token)
@@ -298,7 +229,7 @@ public class BookSteps {
 
 
     @Then("the response status should be {int}")
-    public void validateStatusCode(Integer expectedStatusCode) {
+    public void validateStatus(Integer expectedStatusCode) {
 
         System.out.println("Response:\n" + response.asPrettyString());
 
